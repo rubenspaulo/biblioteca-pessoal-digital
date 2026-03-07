@@ -20,7 +20,7 @@ A Biblioteca Pessoal Digital é uma aplicação web para dispositivos móveis qu
   - Listagem de todas as publicações
 
 - **Nova Publicação**: Adicionar novos itens à biblioteca
--
+
 - **Relatórios**: Análise e estatísticas de leitura
 
 - **Configurações**: Personalização da aplicação
