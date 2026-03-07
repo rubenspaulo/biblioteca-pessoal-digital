@@ -1,139 +1,83 @@
-# 📚 Biblioteca Pessoal Digital
+# Biblioteca Pessoal Digital
 
-Protótipo de baixa fidelidade de um sistema de gerenciamento de biblioteca pessoal digital, criado originalmente no Figma Make e desenvolvido em versão web funcional.
+Protótipo web de uma biblioteca pessoal digital, desenvolvido para atividade academica.
 
-## 📋 Sobre o Projeto
+## Objetivo desta branch
 
-A Biblioteca Pessoal Digital é uma aplicação web para dispositivos móveis que permite gerenciar sua coleção pessoal de livros e revistas.
+A branch `main` representa a versao de baixa fidelidade (low-fi), com foco em:
 
-## ✨ Funcionalidades
+- estrutura das telas
+- fluxo de navegacao
+- estados de interface (placeholders e vazios)
+- validacao da ideia antes de refinamento visual
 
-- **Dashboard**: Visualização geral com estatísticas de leitura
-  - Total de publicações
-  - Contadores de status (Não lidos, Lendo, Lidos)
-  - Meta anual de leitura com barra de progresso
-  - Publicações mais bem avaliadas
+## Versoes do prototipo
 
-- **Publicações**: Gerenciamento completo do acervo
-  - Busca por título ou autor
-  - Filtros por status de leitura
-  - Listagem de todas as publicações
+- `main`: prototipo de baixa fidelidade (versao de entrega)
+- `prototype/medium-fi`: prototipo de media fidelidade (versao visual mais elaborada)
 
+<<<<<<< HEAD
 - **Nova Publicação**: Adicionar novos itens à biblioteca
 
 - **Relatórios**: Análise e estatísticas de leitura
+=======
+## Escopo funcional
+>>>>>>> e6287b8 (feat: padroniza prototipo low-fi para entrega academica)
 
-- **Configurações**: Personalização da aplicação
+O prototipo contem as seguintes paginas:
 
-## 🛠️ Tecnologias Utilizadas
+- Dashboard
+- Publicacoes
+- Nova Publicacao
+- Relatorios
+- Configuracoes
+- 404
 
-- **HTML5**: Estrutura semântica das páginas
-- **CSS3**: Estilização e design responsivo
-  - `/css/styles.css`: Estilos principais
-  - `/css/styles-screen.css`: Estilos para visualização em moldura (simulador de iPhone)
-- **JavaScript/TypeScript**: Interatividade e funcionalidades
-  - Menu hambúrguer responsivo
-  - Navegação entre páginas
-  - Acessibilidade com ARIA
+## Tecnologias
 
-## 📁 Estrutura do Projeto
+- HTML5
+- CSS3
+- JavaScript
 
-```
+## Estrutura do projeto
+
+```text
 Biblioteca Pessoal Digital/
-│
-├── index.html                     # Página inicial com moldura de iPhone
-├── 404.html                       # Página de erro
-├── README.md                      # Este arquivo
-│
-├── /css/
-│   ├── styles.css                 # Estilos principais
-│   └── styles-screen.css          # Estilos para moldura do dispositivo
-│
-├── /js/
-│   └── script.js                  # Lógica JavaScript (menu, navegação)
-│
-└── /pages/
-    ├── dashboard.html             # Dashboard principal
-    ├── publicacoes.html           # Lista de publicações
-    ├── nova-publicacao.html       # Formulário para adicionar publicação
-    ├── relatorios.html            # Página de relatórios
-    └── configuracoes.html         # Configurações do sistema
+|- index.html
+|- 404.html
+|- README.md
+|- css/
+|  |- styles.css
+|  `- styles-screen.css
+|- js/
+|  `- script.js
+`- pages/
+   |- dashboard.html
+   |- publicacoes.html
+   |- nova-publicacao.html
+   |- relatorios.html
+   `- configuracoes.html
 ```
 
-## 🚀 Como Acessar
+## Como executar localmente
 
-1. **Acesso online (GitHub Pages)**
+Acesso online (GitHub Pages):
 
-- Projeto publicado em: `https://rubenspaulo.github.io/biblioteca-pessoal-digital`
+- `https://rubenspaulo.github.io/biblioteca-pessoal-digital`
 
-2. **Execução local (opcional)**
+Opcao 1:
 
-- Clone o repositório (ou baixe os arquivos)
+- abrir `index.html` para visualizar o projeto na moldura de dispositivo
 
-```bash
-git clone <url-do-repositorio>
-cd "Biblioteca Pessoal Digital"
-```
-
-- Para visualização com moldura de iPhone: abra `index.html`
-- Para visualização direta: abra `dashboard.html`
-
-3. **Servidor local (recomendado para desenvolvimento)**
+Opcao 2 (recomendado):
 
 ```bash
-# Com Python
 python -m http.server 8000
-
-# Com Node.js (http-server)
-npx http-server
-
-# Com PHP
-php -S localhost:8000
 ```
 
-- Acesse: `http://localhost:8000`
+Depois, acesse `http://localhost:8000`.
 
-## 🎨 Design
+## Observacoes
 
-O projeto mantém a estética de protótipo de baixa fidelidade:
-
-- Elementos de placeholder como `[ÍCONE]` e `[★]`
-- Tipografia monoespaçada característica
-- Interface minimalista e focada em funcionalidade
-- Design responsivo com menu hambúrguer
-
-## ♿ Acessibilidade
-
-O projeto implementa boas práticas de acessibilidade:
-
-- Atributos ARIA para leitores de tela (`aria-label`, `aria-expanded`)
-- Navegação por teclado
-- Estrutura semântica HTML5
-- Contraste adequado de cores
-
-## 📱 Responsividade
-
-- Menu hambúrguer para dispositivos móveis
-- Layout adaptável a diferentes tamanhos de tela
-- Visualização em moldura de iPhone para demonstração
-
-## 🔄 Estado Atual
-
-Este é um **protótipo funcional** com:
-
-- ✅ Interface completa
-- ✅ Navegação entre páginas
-- ✅ Menu responsivo
-- ⏳ Funcionalidades de backend (a implementar)
-- ⏳ Persistência de dados (a implementar)
-- ⏳ Sistema de busca e filtros (a implementar)
-
-## 🎯 Próximos Passos
-
-- [ ] Implementar persistência de dados (LocalStorage ou Backend)
-- [ ] Adicionar funcionalidade de busca real
-- [ ] Implementar filtros nas publicações
-- [ ] Sistema de avaliação de livros
-- [ ] Gráficos e relatórios dinâmicos
-
-**Nota**: Este é um protótipo de baixa fidelidade criado para uma atividade acadêmica.
+- Este repositorio separa evolucao visual por branch para facilitar comparacao e apresentacao.
+- A versao low-fi prioriza clareza de estrutura, nao acabamento visual final.
