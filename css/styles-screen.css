@@ -8,14 +8,17 @@ body {
 
 .iphone {
   aspect-ratio: 9 / 19.5;
-  width: min(412px, 90vw);
+  width: min(412px, calc(100vw - 2rem), calc((100svh - 2rem) * 9 / 19.5));
+  max-height: calc(100svh - 2rem);
   transform: scale(1);
   transform-origin: center;
   position: relative;
   border-radius: 42px;
   padding: 14px;
   background: linear-gradient(180deg, #0f1114, #0a0b0d);
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.55), 0 10px 20px rgba(0, 0, 0, 0.45),
+  box-shadow:
+    0 30px 60px rgba(0, 0, 0, 0.55),
+    0 10px 20px rgba(0, 0, 0, 0.45),
     inset 0 0 0 1px rgba(255, 255, 255, 0.05);
 }
 
@@ -25,7 +28,8 @@ body {
   inset: 0;
   border-radius: 42px;
   pointer-events: none;
-  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.04),
+  box-shadow:
+    inset 0 0 0 2px rgba(255, 255, 255, 0.04),
     inset 0 0 24px rgba(255, 255, 255, 0.03);
 }
 
@@ -39,11 +43,11 @@ body {
 }
 
 iframe {
-  position:absolute;
-  inset:0;
-  width:100%;
-  height:100%;
-  border:0;
-  border-radius:30px;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 30px;
   background: transparent;
 }
