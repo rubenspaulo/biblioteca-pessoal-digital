@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Digital</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+<div class="menu"><button
+    class="hamburger"
+    id="btn-menu"
+    aria-expanded="false"
+    aria-label="Abrir Menu"
+  >
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+  </button>
+
+  <nav class="nav-links" id="menu-links">
+    <ul>
+        <li><a href="/pages/dashboard.html">[Dashboard]</a></li>
+        <li><a href="/pages/publicacoes.html">[Publicações]</a></li>
+        <li><a href="/pages/relatorios.html">[Relatórios]</a></li>
+        <li><a href="/pages/configuracoes.html">[Configurações]</a></li>
+    </ul>
+</nav>
+</div>
+<div class="header__title"><a href="/pages/dashboard.html"><h1>Biblioteca Digital</h1></a></div>
+<div class="header__actions">
+    <a href="/pages/nova-publicacao.html" class="fab" aria-label="Nova Publicação" title="Nova Publicação">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="12" y1="5" x2="12" y2="19"></line>
+    <line x1="5" y1="12" x2="19" y2="12"></line>
+  </svg>
+</a>
+    </div>
+    </header>
+    <main>
+    <section class="container">
+        <div class="title underlined">
+            <h2>>> Configurações</h2>
+        </div>
+<div class="card">
+<div class="field">
+    <label for="genero">Qual o seu gênero favorito? (Opcional)</label>
+    <input type="text" name="genero" id="genero" placeholder="Ex: Ficção Científica">
+</div>
+<div class="field">
+    <label for="simultaneas">Quantas publicações você deseja ler ao mesmo tempo?</label>
+    <input type="number" name="simultaneas" id="simultaneas" placeholder="5">
+</div>
+<div class="field">
+    <label for="meta-anual"></label>Quantas publicações você deseja ler este ano?</label>
+    <input type="number" name="meta-anual" id="meta-anual" placeholder="12">
+</div>
+<div class="field">
+    <button class="btn" style="margin-top: 0.5rem">[SALVAR CONFIGURAÇÕES]</button>
+</div>
+</div>
+    </section></main>
+<footer>[Rodapé]</footer>
+<script src="/js/script.js"></script>
+</body>
+</html>
