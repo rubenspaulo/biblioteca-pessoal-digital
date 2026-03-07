@@ -16,13 +16,9 @@ A branch `main` representa a versao de baixa fidelidade (low-fi), com foco em:
 - `main`: prototipo de baixa fidelidade (versao de entrega)
 - `prototype/medium-fi`: prototipo de media fidelidade (versao visual mais elaborada)
 
-<<<<<<< HEAD
 - **Nova Publicação**: Adicionar novos itens à biblioteca
 
 - **Relatórios**: Análise e estatísticas de leitura
-=======
-## Escopo funcional
->>>>>>> e6287b8 (feat: padroniza prototipo low-fi para entrega academica)
 
 O prototipo contem as seguintes paginas:
 
